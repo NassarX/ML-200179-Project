@@ -1,4 +1,4 @@
-# The Smith Parasite - Predictive Model
+# Data-Driven Predictive Modeling of the Smith Disease.
 Course project of **`Machine Learning`**  course - [MDSAA-DS](www.novaims.unl.pt/MDSAA-DS) - Fall 2022
 
 ## Details of the Project
@@ -17,7 +17,16 @@ The model will be trained on a `dataset containing a small quantity of sociodemo
 The model will be evaluated using `f1 score` of instances correctly predicted.
 
 ### Methodology
-> @TODO
+To develop a predictive model for the Smith Disease, I've followed the steps to:
+
+1. Collect and preprocess the data: Begin by collecting a dataset of sociodemographic, health, and behavioral information about patients with the Smith Disease. This may include data on factors such as age, gender, lifestyle, preexisting health conditions, and other relevant variables. Preprocess the data to ensure that it is clean and ready for modeling.
+2. Explore and visualize the data: Next, explore the data to gain a better understanding of the characteristics of the patients and any potential relationships between the variables. Use visualization techniques such as histograms, scatter plots, and box plots to visualize the data and identify patterns and trends.
+3. Select and prepare the features: Select the features that you believe are most relevant for predicting the likelihood of a patient suffering from the Smith Disease. Prepare the features for modeling by scaling or normalizing the data as needed.
+4. Split the data into training and test sets: Divide the prepared data into a training set and a test set. The training set will be used to fit the model, while the test set will be used to evaluate the model's performance.
+5. Train the model: Use the training set to train a predictive model using a suitable machine learning algorithm. There are many algorithms to choose from, including decision trees, random forests, support vector machines, and neural networks. Select the algorithm that performs best on the training set, based on metrics such as accuracy or f1 score.
+6. Evaluate the model: Use the test set to evaluate the performance of the trained model. Calculate the f1 score of correctly predicted instances to determine the model's accuracy. If the model's performance is not satisfactory, consider adjusting the model or trying a different algorithm.
+7. Fine-tune the model: Once you have identified a model that performs well on the test set, fine-tune the model by adjusting its hyperparameters or adding additional features as needed.
+8. Validate the model: Finally, validate the model's performance on a separate dataset to ensure that it generalizes well to new data. If the model performs well on the validation set, you can consider using it to make predictions on new cases of the Smith Disease.
 
 ### Datasets
 > The training set used to build the model. 
