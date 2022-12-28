@@ -218,7 +218,6 @@ def export_submission(model_name, X_test, labels_test, path, columns=['PatientID
     kaggle_sub.to_csv(path + model_name.replace(" ", "_") + '.csv', index=False)
 
 
-class MLHelper:
+class Helper:
     def __init__(self):
-        asd = 'asd'
         pass
