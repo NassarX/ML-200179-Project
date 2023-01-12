@@ -191,7 +191,7 @@ def perform_cross_validation(model_, X_train, y_train, cv=5):
 
 
 def model_hyperparameter_tuning(model_, grid_params, X_train, y_train, X_val, X_test, cv=5):
-    grid = GridSearchCV(estimator=model_, param_grid=grid_params, scoring='f1', cv=cv, n_jobs=-1, verbose=20)
+    grid = GridSearchCV(estimator=model_, param_grid=grid_params, scoring='f1', cv=cv)
 
     grid.fit(X_train, y_train)
     model_grid_best = grid.best_estimator_
