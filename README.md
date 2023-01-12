@@ -57,18 +57,19 @@ Before building the model, the dataset was pre-processed in the following steps:
 
 ### Modeling
 
-The predictive model was built using the 6 different algorithms. The following steps were taken:
+The predictive model was built using the 6 different algorithms. Almost all the algorithms follow this pattern:
 
-[Insert any steps taken to select the model type, such as comparison to baseline models, hyperparameter tuning, etc.]
-[Insert any steps taken to train the model, such as splitting the data into training and validation sets, defining the loss function, etc.]
+- Define the classifier
+- Fit the model with the train set
+- Predict on the test set, using the fitted classifier
+- Compute performances of the model, showing some statistics and metrics
 
 ### Evaluation
 
-The model was evaluated using [insert evaluation metrics] on the [insert data split used for evaluation, such as test set or holdout set]. The following results were obtained:
+The model was evaluated using F1 Score on the test set. The following results were obtained:
 
-[Insert evaluation metric 1]: [Insert result]
-[Insert evaluation metric 2]: [Insert result]
-[Insert evaluation metric 3]: [Insert result]
+- Decision Tree: 0.99
+- XGBoost: 0.996
 
 ### Conclusion
 
